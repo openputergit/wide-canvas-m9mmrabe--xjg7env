@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7X Weddings - Wedding Photography & Cinematography</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-section {
+            background: url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1000') center/cover;
+            height: 100vh;
+        }
+        .overlay {
+            background: rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-transparent transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-white text-2xl font-bold playfair">7X Weddings</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-white hover:text-gray-300">Home</a>
+                    <a href="#about" class="text-white hover:text-gray-300">About</a>
+                    <a href="#portfolio" class="text-white hover:text-gray-300">Portfolio</a>
+                    <a href="#services" class="text-white hover:text-gray-300">Services</a>
+                    <a href="#contact" class="text-white hover:text-gray-300">Contact</a>
+                </div>
+                <button class="md:hidden text-white" onclick="toggleMenu()">
+                    <i class="bi bi-list text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-black bg-opacity-90" id="mobileMenu">
+            <div class="container mx-auto px-4 py-4">
+                <a href="#home" class="block text-white py-2">Home</a>
+                <a href="#about" class="block text-white py-2">About</a>
+                <a href="#portfolio" class="block text-white py-2">Portfolio</a>
+                <a href="#services" class="block text-white py-2">Services</a>
+                <a href="#contact" class="block text-white py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section relative">
+        <div class="overlay absolute inset-0"></div>
+        <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+            <div class="text-white max-w-2xl" data-aos="fade-up">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 playfair">Capturing Your Perfect Moments</h1>
+                <p class="text-xl mb-8">Professional wedding photography and cinematography services to preserve your special day forever.</p>
+                <a href="#contact" class="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-200 transition-all">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-4 playfair">About Us</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We are passionate storytellers who believe in capturing authentic moments and creating timeless memories of your special day.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <i class="bi bi-camera text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Photography</h3>
+                    <p class="text-gray-600">Professional photography services to capture every precious moment.</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <i class="bi bi-film text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Cinematography</h3>
+                    <p class="text-gray-600">Cinematic wedding films that tell your unique love story.</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bi bi-heart text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Dedication</h3>
+                    <p class="text-gray-600">Committed to excellence and attention to detail.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-4 playfair">Our Portfolio</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Browse through our collection of wedding memories we've captured over the years.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="relative overflow-hidden group" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552" alt="Wedding Photo" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+                        <i class="bi bi-zoom-in text-white text-3xl"></i>
+                    </div>
+                </div>
+                <!-- Add more portfolio items similarly -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-4 playfair">Our Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive wedding photography and cinematography packages tailored to your needs.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 border rounded-lg" data-aos="fade-up">
+                    <h3 class="text-2xl font-bold mb-4 playfair">Basic Package</h3>
+                    <ul class="space-y-2 mb-6">
+                        <li><i class="bi bi-check2 mr-2"></i>6 Hours Coverage</li>
+                        <li><i class="bi bi-check2 mr-2"></i>200 Edited Photos</li>
+                        <li><i class="bi bi-check2 mr-2"></i>Online Gallery</li>
+                    </ul>
+                    <a href="#contact" class="block text-center bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800">Book Now</a>
+                </div>
+                <!-- Add more service packages similarly -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-4 playfair">Contact Us</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Get in touch to discuss your wedding photography needs.</p>
+            </div>
+            <div class="max-w-xl mx-auto">
+                <form class="space-y-4" data-aos="fade-up">
+                    <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg">
+                    <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg">
+                    <input type="text" placeholder="Wedding Date" class="w-full p-3 border rounded-lg">
+                    <textarea placeholder="Your Message" class="w-full p-3 border rounded-lg h-32"></textarea>
+                    <button type="submit" class="w-full bg-black text-white py-3 rounded-full hover:bg-gray-800">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 playfair">7X Weddings</h3>
+                    <p>Creating timeless memories of your special day.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl mb-4">Contact Info</h4>
+                    <p>Email: info@7xweddings.com</p>
+                    <p>Phone: +1 234 567 890</p>
+                </div>
+                <div>
+                    <h4 class="text-xl mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-300"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8 pt-8 border-t border-gray-800">
+                <p>&copy; 2024 7X Weddings. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.getElementById('navbar').classList.add('bg-black');
+            } else {
+                document.getElementById('navbar').classList.remove('bg-black');
+            }
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message. We will get back to you soon!');
+            this.reset();
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
